@@ -8,7 +8,7 @@ public class LCOF18 {
 }
 
 
-class DeleteNode {
+class DeleteNodeMethod {
 
     public ListNode method(ListNode head, int val) {
 

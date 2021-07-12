@@ -11,12 +11,12 @@ import java.util.Map;
 public class LC0387 {
 
     public static void main(String[] args) {
-        System.out.println(new FirstUniqChar().method("leetcode"));
+        System.out.println(new FirstUniqCharMethod().method("leetcode"));
     }
 }
 
 
-class FirstUniqChar {
+class FirstUniqCharMethod {
 
     public int method(String s) {
 

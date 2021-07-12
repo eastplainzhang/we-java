@@ -4,11 +4,11 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class lC0619 {
+public class LC0619 {
 }
 
 
-class MajorityElement {
+class MajorityElementMethod {
 
     public int method_01(int[] nums) {
 

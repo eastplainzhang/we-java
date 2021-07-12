@@ -46,7 +46,7 @@ Class Metadata Address（类型指针），Mark Word（标记字段）
 
 标记字段有一个字段指向monitor对象，monitor中记录锁的持有线程，等待的线程队列。**上文说的每个对象有一个锁和一个等待队列就是在这里实现的**。
 
-#### 2.2.2. monitor操作机制
+#### 2.2.2. moitor操作机制
 
 monitor对象有三个关键字段
 
