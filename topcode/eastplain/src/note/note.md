@@ -2,6 +2,8 @@
 
 ## 1.1. 二叉树的遍历
 
+https://leetcode-cn.com/problems/binary-tree-preorder-traversal/solution/leetcodesuan-fa-xiu-lian-dong-hua-yan-shi-xbian-2/
+
 ### 1.1.1. 二叉树的前序遍历
 
 leetcode 0144
