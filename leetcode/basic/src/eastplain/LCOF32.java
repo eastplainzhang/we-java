@@ -1,9 +1,8 @@
 package eastplain;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import sun.awt.image.ImageWatched;
+
+import java.util.*;
 
 /**
  * @author EastPlain
@@ -81,6 +80,58 @@ class LevelOrderTree {
             list.add(temp);
         }
         return list;
+    }
+
+    public List<List<Integer>> method_3(TreeNode root) {
+
+        List<List<Integer>> ans = new ArrayList<>();
+        Queue<TreeNode> queue = new LinkedList<>();
+        int flag = 0;
+
+        if (root == null) {
+            return ans;
+        }
+
+        queue.add(root);
+
+        while (! queue.isEmpty()) {
+
+            int size = queue.size();
+            List<Integer> temp = new ArrayList<>();
+            Deque<TreeNode> deque = new LinkedList<>();
+
+            for (int i = 0; i < size; i++) {
+                TreeNode current = queue.remove();
+                deque.addLast(current);
+
+                if (current.left != null) {
+                    queue.add(current.left);
+                }
+
+                if (current.right != null) {
+                    queue.add(current.right);
+                }
+            }
+
+            if (flag % 2 == 0) {
+                while (! deque.isEmpty()) {
+                    TreeNode node = deque.removeFirst();
+                    temp.add(node.val);
+                }
+            }
+            else {
+                while (! deque.isEmpty()) {
+                    TreeNode node = deque.removeLast();
+                    temp.add(node.val);
+                }
+            }
+
+            flag ++;
+
+            ans.add(temp);
+        }
+
+        return ans;
     }
 
 }
